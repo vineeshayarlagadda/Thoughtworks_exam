@@ -1,0 +1,19 @@
+x=int(input())
+def Mini(x):
+    if x>75:return x*8 
+    if x>18:return 200+(x-18)*8 
+    if x>3:return 50+(x-3)*10 
+    return 50
+def Sedan(x):
+    if x>100:return x*10 
+    if x>=20:return 260+(x-20)*10 
+    if x>5:return 80+(x-5)*12 
+    return 80 
+def SUV(x):
+    if x>20:return 325+(x-20)*12 
+    if x>5:return 100+(x-5)*15 
+    return 100
+mini=Mini(x)
+sedan=Sedan(x)
+suv=SUV(x)
+print("Mini-Rs.{}, Sedan-Rs.{}, SUV-Rs.{}".format(mini,sedan,suv))
